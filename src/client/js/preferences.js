@@ -89,13 +89,13 @@ function loadPreferences() {
 function savePreferences(e) {
   e.preventDefault();
 
-  var gender       = document.getElementById('userGender').value;
-  var species      = document.getElementById('userSpecies').value;
-  var role         = document.getElementById('userRole').value;
-  var kinks        = document.getElementById('userKinks');
-  var matchGender  = document.getElementById('partnerGender');
-  var matchSpecies = document.getElementById('partnerSpecies');
-  var matchRole    = document.getElementById('partnerRole').value;
+  var gender       = "Generic"; //document.getElementById('userGender').value;
+  var species      = "Generic"; //document.getElementById('userSpecies').value;
+  var role         = "Generic"; //document.getElementById('userRole').value;
+  var kinks        = "Generic"; //document.getElementById('userKinks');
+  var matchGender  = "Generic"; //document.getElementById('partnerGender');
+  var matchSpecies = "Generic"; //document.getElementById('partnerSpecies');
+  var matchRole    = "Generic"; //document.getElementById('partnerRole').value;
 
   var selectedKinks = [];
   var selectedGenders = [];

@@ -10,7 +10,7 @@ const user = require('./user');
  * @return {[type]} [description]
  */
 function left() {
-  chat.addChatMessage('Your yiffing partner has left.', {
+  chat.addChatMessage('Your partner has left.', {
     class: 'message-system'
   });
 
@@ -27,13 +27,12 @@ function left() {
 function connected(data) {
   chat.showChatBox();
 
-  chat.addChatMessage('You have been connected with a yiffing partner.', {
+  chat.addChatMessage('You have been connected with a partner.', {
     class: 'message-system'
   });
 
   chat.addChatMessage(''+
-    'Your partner is a '+data.role+', '+data.gender+', '+data.species+' '+
-    'interested in: '+data.kinks+'.',
+    'Your partner is a generic.',
   {class: 'message-system'});
 
   user.setPartner(true);
@@ -72,7 +71,7 @@ function pending() {
 
   chat.addChatMessage(''+
   'We are looking for a partner to match you with. '+
-  'Please either continue to wait, or modify your yiffing preferences.', {
+  'Please continue to wait until you are no longer waiting.', {
     class: 'message-system'
   });
 }
@@ -82,7 +81,7 @@ function pending() {
  * @return {[type]} [description]
  */
 function disconnected() {
-  chat.addChatMessage('Your yiffing partner has disconnected unexpectedly.', {
+  chat.addChatMessage('Your partner has disconnected unexpectedly.', {
     class: 'message-system'
   });
 

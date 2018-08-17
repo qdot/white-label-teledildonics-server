@@ -124,6 +124,7 @@ module.exports = function (users, token, preferences) {
     var currentUser = users.findClient(token);
     var clients = users.getAllClients();
 
+  /*
     // If user submitted any blank values, do not search for anything.
     if (checkEmpty(preferences.user) || checkEmpty(preferences.partner) || checkEmpty(preferences.kinks)) {
       if (currentUser.socket.readyState == 1) {
@@ -139,7 +140,7 @@ module.exports = function (users, token, preferences) {
       }
       return false;
     }
-
+  */
     // User is looking for a new partner, therefore delete any existing paired partner.
     if (currentUser.partner != null) {
       var currentPartner = users.findClient(currentUser.partner);
@@ -164,7 +165,7 @@ module.exports = function (users, token, preferences) {
         // Make sure not on blocked list for user.
         if (users.checkBlocks(currentUser.id, client.id) === false && users.checkBlocks(client.id, currentUser.id) === false) {
           // Match based off preferences.
-          if (matchedDesires(preferences.kinks, client.preferences.kinks) && matchedPreferences(preferences, client.preferences)) {
+          // if (matchedDesires(preferences.kinks, client.preferences.kinks) && matchedPreferences(preferences, client.preferences)) {
             partner = client;
             users.pairPartners(currentUser.id, client.id);
 
@@ -178,7 +179,7 @@ module.exports = function (users, token, preferences) {
             }
 
             break;
-          }
+          // }
         }
       }
     }
