@@ -19,7 +19,7 @@ npm install
 
 To us our prebuilt instance on glitch:
 
-- Go to https://metafetish-white-label-teledildonics-server.glitch.com
+- Go to https://metafetish-white-label-teledildonics-server.glitch.me
 - You will be matched with random people. Please do not teledildonics them without knowing who they are. That could be bad otherwise.
 
 To spin up your own server instance on glitch (so you could use it with someone else with whom you have shared the URL):
