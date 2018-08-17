@@ -1,6 +1,6 @@
 module.exports = {
   "host": 'http://localhost:3000',
-  "page_title": 'Yiff Spot | Yiff With Random Furries!',
+  "page_title": 'GENERIC TELEDILDONICS SERVER | FOR ALL YOUR GENERIC SEXUAL REQUIREMENTS',
   "debug": false,
   "http_port": process.env.PORT || 3000,
   "https_port": process.env.PORT || 3443,
