@@ -193,13 +193,13 @@ function toggleMenu(e) {
  * @return {[type]} [description]
  */
 function validatePreferences() {
-  var gender       = document.getElementById('userGender').value;
-  var species      = document.getElementById('userSpecies').value;
-  var role         = document.getElementById('userRole').value;
-  var kinks        = document.getElementById('userKinks');
-  var matchGender  = document.getElementById('partnerGender');
-  var matchSpecies = document.getElementById('partnerSpecies');
-  var matchRole    = document.getElementById('partnerRole').value;
+  var gender       = "Generic";
+  var species      = "Generic";
+  var role         = "Generic";
+  var kinks        = [];
+  var matchGender  = "Generic";
+  var matchSpecies = "Generic";
+  var matchRole    = "Generic";
 
   var selectedKinks = [];
   var selectedGenders = [];
@@ -239,7 +239,7 @@ function validatePreferences() {
     alert("Please select the kinks you're interested in.");
     return false;
   }
-
+/*
   for (var i=0; i<kinks.options.length; i++) {
     if (kinks.options[i].selected) {
       selectedKinks.push(kinks.options[i].value);
@@ -257,7 +257,7 @@ function validatePreferences() {
       selectedSpecies.push(matchSpecies.options[i].value);
     }
   }
-
+*/
   return {
     'user': {
       'gender': gender,
